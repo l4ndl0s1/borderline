@@ -3,178 +3,333 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Borderline</title>
+    <title>Borderline - Info</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="title">BORDERLINE</header>
+    <header class="title">borderline - info</header>
+    <a href="https://www.laurusedelbacher.com/" >www.laurusedelbacher.com</a>
 
     <div class="grid">
-      <!-- 1: YouTube -->
-      <div class="screen">
-        <iframe
-          src="https://www.youtube.com/watch?v=4ewciPikB1M&t=13s"
-          allowfullscreen
-        ></iframe>
-        <a href="#">Open</a>
+      <div
+        class="screen text-screen"
+        data-content-type="text"
+        data-content-source=".scrollable-text"
+      >
+        <div class="scrollable-text">
+          <strong>BORDERLINE</strong><br />
+          <em>Interactive game installation</em><br />
+          Laurus Edelbacher<br />
+          2021<br /><br />
+          The work Borderline is centered around the topic of national borders
+          fortified with diverse barriers and surveillance systems, which are
+          intended to make their crossing more difficult when not impossible.
+          Via a virtual array of surveillance monitors, six screens display
+          selected sections of such border zones around the world. Using
+          reference images from the internet, these real border zones are
+          reconstructed as interactive 3D environments in a game engine. Users
+          can manually control the individual surveillance cameras with the
+          camera interface and explore the 3D environments. They can also expose
+          set trigger points in the different border zones with a cross-hair
+          pointer and thereby deconstruct the surveillance system and make the
+          individual surveillance cameras crash.
+          <br /><br />
+        </div>
+        <span class="screen-label">About</span>
       </div>
 
-      <!-- 2: Image -->
-      <div class="screen">
-        <img src="https://via.placeholder.com/320x200?text=Cam+2" alt="Cam 2" />
-        <a href="#">Details</a>
+      <div class="screen" data-content-type="image" data-content-source="img">
+        <img src="Borderline installation view.png" alt="Installation View" />
+        <span class="screen-label">Installation View</span>
       </div>
 
-      <!-- 3: Text -->
-      <div class="screen">
-        <span>Observation Post Delta</span>
-        <a href="#">Logs</a>
+      <div class="screen" data-content-type="image" data-content-source="img">
+        <img src="screens/1.jpg" alt="Installation View" />
+        <span class="screen-label">CCTV (RU)</span>
       </div>
 
-      <!-- 4: No Signal -->
-      <div class="screen no-signal">
-        <span>NO SIGNAL</span>
-      </div>
+      <div
+        class="screen"
+        data-content-type="video"
+        data-video-source="screens/cam_19_no_signal.mp4"
+        data-content-source="video"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          preload="metadata"
+          style="width: 100%; height: 100%"
+        >
+          <source src="screens/cam_19_no_signal.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      
+    </div>
 
-      <!-- 5 -->
-      <div class="screen">
-        <iframe
-          src="https://www.youtube.com/embed/4ewciPikB1M?si=ns5vZbDo7NTov423&amp;controls=0"
-          title="Borderline"
-          frameborder="0"
-          allow="encrypted-media; "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <a href="#">Live Feed</a>
-      </div>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-id="4ewciPikB1M"
+      data-content-source="iframe"
+    >
+      <iframe
+        src="https://www.youtube.com/embed/4ewciPikB1M?si=ns5vZbDo7NTov423&controls=0"
+        title="Borderline Study"
+        frameborder="0"
+        allow="encrypted-media; "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+      <span class="screen-label">Video Documentation</span>
+    </div>
 
-      <!-- 6 -->
-      <div class="screen">
-        <img src="https://placekitten.com/300/200" alt="Cam 6" />
-        <a href="#">Inspect</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="border_img1.PNG" alt="Border Image 1" />
+      <span class="screen-label">Detail Interface</span>
+    </div>
 
-      <!-- 7 -->
-      <div class="screen">
-        <span>Sector 7 Watchtower</span>
-        <a href="#">Enter</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="screens/2.jpg" alt="Installation View" />
+      <span class="screen-label">CCTV - Uttarakhand (IND)
 
-      <!-- 8 -->
-      <div class="screen no-signal">
-        <span>NO SIGNAL</span>
-      </div>
+    </span>
+    </div>
 
-      <!-- 9 -->
-      <div class="screen">
-        <iframe
-          src="https://www.youtube.com/embed/oHg5SJYRHA0"
-          allowfullscreen
-        ></iframe>
-        <a href="#">Stream</a>
-      </div>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-source="screens/border.webm"
+      data-content-source="video"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        preload="metadata"
+        style="width: 100%; height: 100%"
+      >
+        <source src="screens/border.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <span class="screen-label">CCTV - (HU)
+      </span>
+    </div>
 
-      <!-- 10 -->
-      <div class="screen">
-        <img src="https://placebear.com/320/200" alt="Cam 10" />
-        <a href="#">Zoom</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="screens/3.jpg" alt="Installation View" />
+      <span class="screen-label">CCTV - HK</span>
+    </div>
 
-      <!-- 11 -->
-      <div class="screen">
-        <span>Gate Control B</span>
-        <a href="#">Manage</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="screens/4.jpg" alt="Installation View" />
+      <span class="screen-label">CCTV - Melilla (ESP) </span>
+    </div>
 
-      <!-- 12 -->
-      <div class="screen no-signal">
-        <span>NO SIGNAL</span>
-      </div>
+    <div
+    class="screen"
+    data-content-type="video"
+    data-video-source="screens/cam2.webm"
+    data-content-source="video"
+  >
+    <video
+      autoplay
+      muted
+      loop
+      preload="metadata"
+      style="width: 100%; height: 100%"
+    >
+      <source src="screens/cam2.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <span class="screen-label">CCTV - Gibina (SLO)
+    </span>
+  </div>
 
-      <!-- 13 -->
-      <div class="screen">
-        <iframe
-          src="https://www.youtube.com/embed/aqz-KE-bpKQ"
-          allowfullscreen
-        ></iframe>
-        <a href="#">Open</a>
-      </div>
 
-      <!-- 14 -->
-      <div class="screen">
-        <img
-          src="https://via.placeholder.com/320x200?text=Cam+14"
-          alt="Cam 14"
-        />
-        <a href="#">Details</a>
-      </div>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-source="screens/cam_4_no_signal.mp4"
+      data-content-source="video"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        preload="metadata"
+        style="width: 100%; height: 100%"
+      >
+        <source src="screens/cam_4_no_signal.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-      <!-- 15 -->
-      <div class="screen">
-        <span>Border Point West</span>
-        <a href="#">Access</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="screens/6.jpg" alt="Installation View" />
+      <span class="screen-label">CCTV - LVA </span>
+    </div>
 
-      <!-- 16 -->
-      <div class="screen no-signal">
-        <span>NO SIGNAL</span>
-      </div>
+     <div
+    class="screen"
+    data-content-type="video"
+    data-video-source="screens/cam4.webm"
+    data-content-source="video"
+  >
+    <video
+      autoplay
+      muted
+      loop
+      preload="metadata"
+      style="width: 100%; height: 100%"
+    >
+      <source src="screens/cam4.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <span class="screen-label">CCTV - 
+        L
+        ISR
+         </span>
+  </div>
 
-      <!-- 17 -->
-      <div class="screen">
-        <iframe
-          src="https://www.youtube.com/embed/Zi_XLOBDo_Y"
-          allowfullscreen
-        ></iframe>
-        <a href="#">Playback</a>
+  <div
+  class="screen"
+  data-content-type="video"
+  data-video-source="screens/cam_21_no_signal.mp4"
+  data-content-source="video"
+>
+  <video
+    autoplay
+    muted
+    loop
+    preload="metadata"
+    style="width: 100%; height: 100%"
+  >
+    <source src="screens/cam_21_no_signal.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+  <div
+  class="screen"
+  data-content-type="video"
+  data-video-source="screens/cam_22_no_signal.mp4"
+  data-content-source="video"
+>
+  <video
+    autoplay
+    muted
+    loop
+    preload="metadata"
+    style="width: 100%; height: 100%"
+  >
+    <source src="screens/cam_22_no_signal.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+    <div
+      class="screen text-screen"
+      data-content-type="text"
+      data-content-source=".scrollable-text"
+    >
+      <div class="scrollable-text">
+        <strong>Exhibitions</strong><br /><br />
+        <u>Borderline</u><br /><br />
+        <strong>2022</strong><br />
+        Connection Unstable – Angewandte Festival, OKP, Vienna, Austria<br />
+        Trauma Trauma – Fabrikraum, Johnstraße 25–27, Vienna, Austria
+        <br /><br />
       </div>
+      <span class="screen-label">Exhibitions  </span>
+    </div>
 
-      <!-- 18 -->
-      <div class="screen">
-        <img src="https://placebeard.it/320x200" alt="Cam 18" />
-        <a href="#">Review</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="play.png" alt="Play Icon" />
+      <span class="screen-label">Installation View</span>
+    </div>
 
-      <!-- 19 -->
-      <div class="screen">
-        <span>Check-In Terminal</span>
-        <a href="#">Connect</a>
-      </div>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-source="screens/cam_3_no_signal.mp4"
+      data-content-source="video"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        preload="metadata"
+        style="width: 100%; height: 100%"
+      >
+        <source src="screens/cam_3_no_signal.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-      <!-- 20 -->
-      <div class="screen no-signal">
-        <span>NO SIGNAL</span>
-      </div>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-id="L_jWHffIx5E"
+      data-content-source="iframe"
+    >
+      <iframe
+        src="https://www.youtube.com/embed/fUYXAX-kHIc?si=Iqz54grg8urIYP7m&amp;controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <span class="screen-label">Screen Recording</span>
+    </div>
 
-      <!-- 21 -->
-      <div class="screen">
-        <iframe
-          src="https://www.youtube.com/embed/L_jWHffIx5E"
-          allowfullscreen
-        ></iframe>
-        <a href="#">Feed</a>
-      </div>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-source="screens/cam_2_no_signal.mp4"
+      data-content-source="video"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        preload="metadata"
+        style="width: 100%; height: 100%"
+      >
+        <source src="screens/cam_2_no_signal.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-      <!-- 22 -->
-      <div class="screen">
-        <img
-          src="https://via.placeholder.com/320x200?text=Cam+22"
-          alt="Cam 22"
-        />
-        <a href="#">More</a>
-      </div>
+    <div class="screen" data-content-type="image" data-content-source="img">
+      <img src="screens/12.jpg" alt="Installation View" />
+      <span class="screen-label">CCTV (TR) </span>
+    </div>
 
-      <!-- 23 -->
-      <div class="screen">
-        <span>Eastern Perimeter</span>
-        <a href="#">Info</a>
-      </div>
-
-      <!-- 24 -->
-      <div class="screen no-signal">
-        <span>NO SIGNAL</span>
+    <div
+      class="screen"
+      data-content-type="video"
+      data-video-source="screens/cam_1_no_signal.mp4"
+      data-content-source="video"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        preload="metadata"
+        style="width: 100%; height: 100%"
+      >
+        <source src="screens/cam_1_no_signal.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <div id="overlay-inner-content"></div>
+        <button id="close-overlay" aria-label="Close overlay">×</button>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
